@@ -1,10 +1,18 @@
 services:
   - type: web
-    name: telegram-bot
+    name: ved-bot
     env: python
     plan: free
     buildCommand: "pip install -r requirements.txt"
     startCommand: "python bot.py"
     envVars:
-      - key: BOT_TOKEN
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        sync: false
+      - key: MAX_MEMORY
+        sync: false
+      - key: VED_SYSTEM_PROMPT
         sync: false
