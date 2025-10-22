@@ -1,0 +1,89 @@
+2025-10-21 16:33:26,222 - __main__ - INFO - Успешный запрос к alta.ru: https://www.alta.ru/tnved/xml_apu/?q=подбери+код+для+айфона
+2025-10-21 16:33:26,225 - __main__ - INFO - Время поиска в alta.ru: 0.738782 сек
+2025-10-21 16:33:31,519 - __main__ - INFO - Время обработки Gemini: 5.293268 сек
+2025-10-21 16:33:31,519 - __main__ - INFO - Ответ закэширован для: подбери код для айфона
+2025-10-21 16:33:31,519 - __main__ - INFO - ✅ Полный ответ на: подбери код для айфона
+2025-10-21 16:43:21,947 - __main__ - INFO - Время поиска в alta.ru: 0.527374 сек
+2025-10-21 16:43:24,996 - __main__ - INFO - Время обработки Gemini: 3.046452 сек
+2025-10-21 16:43:25,101 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 34
+2025-10-21 16:43:25,103 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 154, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 97, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 10134, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/johnycash/logistics_bot/bot.py", line 220, in handle_ai
+    bot.send_message(chat_id, answer, parse_mode='Markdown', reply_markup=MAIN_MENU_MARKUP)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1811, in send_message
+    apihelper.send_message(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 282, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 197, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 34
+
+2025-10-21 16:43:42,976 - __main__ - INFO - Время обработки Gemini: 0.893097 сек
+2025-10-21 16:43:43,053 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 34
+2025-10-21 16:43:43,056 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 154, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 97, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 10134, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/johnycash/logistics_bot/bot.py", line 220, in handle_ai
+    bot.send_message(chat_id, answer, parse_mode='Markdown', reply_markup=MAIN_MENU_MARKUP)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1811, in send_message
+    apihelper.send_message(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 282, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 197, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 34
+
+2025-10-21 16:44:05,278 - __main__ - INFO - Время обработки Gemini: 1.235097 сек
+2025-10-21 16:44:05,335 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 34
+2025-10-21 16:44:05,338 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 154, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/util.py", line 97, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 10134, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/johnycash/logistics_bot/bot.py", line 220, in handle_ai
+    bot.send_message(chat_id, answer, parse_mode='Markdown', reply_markup=MAIN_MENU_MARKUP)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/__init__.py", line 1811, in send_message
+    apihelper.send_message(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 282, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/telebot/apihelper.py", line 197, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 34
+
+2025-10-21 20:20:02,528 - __main__ - INFO - Отправка запроса к DeepSeek API для chat_id 1469471348
+2025-10-21 20:20:03,769 - __main__ - ERROR - ❌ Ошибка запроса к DeepSeek: 402 Client Error: Payment Required for url: https://api.deepseek.com/v1/chat/completions
